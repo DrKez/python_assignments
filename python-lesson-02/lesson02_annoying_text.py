@@ -13,4 +13,4 @@ shouting_text = original_text.upper()
 annoying_text = shouting_text * 10
 print(f"My annoying text is {annoying_text}")
 #print(len(f"My annoying text is {annoying_text}!"))
-print(f"It has {len(f"My annoying text is {annoying_text}!")} characters.")
+print(f"It has {len(f'My annoying text is {annoying_text}')} characters.")
