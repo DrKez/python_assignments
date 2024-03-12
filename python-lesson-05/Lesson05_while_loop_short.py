@@ -6,7 +6,6 @@ has_palindrome = False
 while not has_palindrome:
    words = input("\033[0m"+"Please enter a word, phrase, sequence or number to check if it's a palindrome: ")
    letters = "".join(c for c in words if c.isalnum())
-   letters = "".join(c for c in words if c.isalnum())
    letters_lower = letters.lower()
    letters_list = list(letters_lower)
    letters_list.reverse()
