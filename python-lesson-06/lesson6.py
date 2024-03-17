@@ -2,17 +2,16 @@
 from datetime import date
 DOB = date(2023, 11, 29)
 print(f'Ethan DOB: {DOB}')
+
 ethan = {
     'name':'Ethan',
     'age': '1 day', 
     'hobby': 'crying', 
     'diet': 'Colostrum'}
-
 for x, y in ethan.items():
   print("\033[1;32m"+ f'  My {x} is {y}.'+"\033[0m")
 
 #Update dictionary 
-from datetime import date
 today = date.today()
 time_difference = today - DOB
 D = time_difference.days
@@ -26,13 +25,6 @@ for x, y in ethan.items():
 
 #delete data
 ethan.pop('diet')
-
-DOB = date(2023, 11, 29)
-
-time_difference = today - DOB
-D = time_difference.days
-M = int(D/7)
-
 
 #add and update
 relationship =input('Please enter your relationship to Ethan (e.g. Mum, Dad, Aunty, Friend): ')
