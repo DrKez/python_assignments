@@ -1,10 +1,17 @@
 
-def palindrome(user_input):
+import random
+
+def is_palindrome(user_input):
     letters = "".join(c.lower() for c in user_input if c.isalnum())
     reversed_letters = letters[::-1]
+    return letters == reversed_letters
 
-    if letters == reversed_letters:
-        print("\033[1;32m" + f"Yes, \"{user_input}\" is a palindrome." + "\033[37m")
-    else:
-        print("\033[1;31m" + f"No, \"{user_input}\" is not a palindrome.")
+def random_words():
+    with open("C:\\Data\\Python\\python_assignments\\python-lesson-10\\pd_words.txt", "r") as pd_words:
+        words = pd_words.read().split('\n')
+        return random.choice(words)
 
+def random_phrases():
+    with open("C:\\Data\\Python\\python_assignments\\python-lesson-10\\pd_phrases.txt", "r") as pd_phrases:
+        phrases = pd_phrases.read().split('\n')
+        return random.choice(phrases)
