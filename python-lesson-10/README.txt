@@ -2,7 +2,7 @@
 PALIDROME RADAR
 
 Please insure you have the following files:
-- palindrome_radar.py
+- palindrome_radar_main.py
 - palindrome.py
 - pd_phrases.txt
 - pd_words.txt
